@@ -7,6 +7,26 @@ body {
 
 }
 
+/* navication bar */
+.navication {
+    background-color: #562EFF;
+    padding: 15px 30px;
+}
+
+.navication ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navication a {
+    text-decoration: none;
+    padding: 0px 20px;
+
+    color: white;
+    margin-top: 40px;
+}
+
 /* common section start */
 main {
     display: flex;
@@ -139,6 +159,21 @@ h2 {
     padding: 10px;
 }
 
+/*--------------------
+     footer srction 
+-----------------------*/
+.creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.creator a {
+    text-decoration: none;
+    color: red;
+}
+
 /*----------------------
     smoll divaises
 ------------------------ */
@@ -162,6 +197,11 @@ h2 {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
 
+    }
+
+    .navication {
+        background-color: #562EFF;
+        padding: 10px 20px;
     }
 
 
