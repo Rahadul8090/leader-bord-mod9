@@ -1,0 +1,186 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #9F9F9F;
+
+}
+
+/* common section start */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 870px;
+    /* height: 679px; */
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px solid rgb(201, 200, 200);
+    margin-bottom: 30px;
+}
+
+.top-players {
+    margin-bottom: 30px;
+}
+
+/* common section end */
+
+/* top player section start */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+h2 {
+    color: #562EFF;
+}
+
+.player-name {
+    margin-left: 16px;
+}
+
+/*----------------------
+ top block aliment start 
+------------------------*/
+.Thamnel img {
+    width: 177px;
+    height: 117px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.taitel {
+    margin-left: 24px;
+}
+
+.cretor a {
+    text-decoration: none;
+
+
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+}
+
+/* ---------------------------
+ letest course style start
+---------------------------- */
+.Lates-Course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+}
+
+.Course {}
+
+.benar img {
+    width: 266px;
+    height: 141px;
+}
+
+.course-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-star.filup {
+    color: #FFC014;
+}
+
+.courcs-info p a {
+    text-decoration: none;
+    color: #ED6B4F;
+}
+
+.fa-star.desh,
+.rating {
+    color: lightgray;
+}
+
+.clock {
+    border: 1px solid red;
+    background-color: #FFE4E8;
+    border-radius: 14px;
+
+}
+
+.clock span {
+    color: #FF4A60;
+    font-weight: 600;
+    font-size: 14.6913px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+/*----------------------
+    smoll divaises
+------------------------ */
+@media only screen and (max-width: 676px) {
+    .content {
+        width: 100%;
+    }
+
+    .players,
+    .block {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .player {
+        flex-direction: column
+    }
+
+    .Lates-Course,
+    .benar {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+
+    }
+
+
+}
+
+/* ===========================
+    iped or teb divaices
+============================== */
+@media only screen and (min-width: 677px) and (max-width: 992px) {
+
+    .content,
+    .top-block {
+        width: 100%;
+    }
+
+    .players,
+    .Lates-Course {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
